@@ -8,8 +8,7 @@ export const helpIntent = (conv: DialogflowConversation) => {
 } 
 
 export const welcomeIntent = (conv: DialogflowConversation) => {
-    conv.ask(messages.welcome);
-    conv.ask(messages.weshAlors);
+    conv.ask(messages.welcome, messages.weshAlors);
 }
 
 export const byeIntent = (conv: DialogflowConversation) => {
