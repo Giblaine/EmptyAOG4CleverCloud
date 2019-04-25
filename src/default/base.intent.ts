@@ -4,11 +4,12 @@ import {
 import { messages } from '../constants';
 
 export const helpIntent = (conv: DialogflowConversation) => {
-    conv.ask(messages.help);    
+    conv.ask(messages.help);
 } 
 
 export const welcomeIntent = (conv: DialogflowConversation) => {
-    conv.ask(messages.welcome);    
+    conv.ask(messages.welcome);
+    conv.ask(messages.weshAlors);
 }
 
 export const byeIntent = (conv: DialogflowConversation) => {
